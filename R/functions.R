@@ -2,7 +2,7 @@ state_ts <- function(data, state_ts, column='guns_sold', outer_zeros_to_na=TRUE)
    d <- data %>%
         filter(state == state_ts & (year >= 2000)) %>%
         arrange(year, month.num) %>%
-        select_('year', month='month.num', value=column)
+        select(year, month = month.num, value = .data[[column]])
    # d$value[d$value == 0] <- NA
    series <- ts(d$value, start=c(d$year[1],d$month[1]), end=c(last(d$year), last(d$month)), frequency = 12)
    if (outer_zeros_to_na) series <- replace_outer_zeros(series)

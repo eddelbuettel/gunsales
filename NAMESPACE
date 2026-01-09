@@ -2,7 +2,8 @@
 export("analysis", "plot_gunsales", "ggplot_gunsales")
 
 importFrom("dplyr", "mutate", "%>%", "filter", "left_join", "select", "group_by",
-           "summarize", "arrange", "select_", "last")
+           "summarize", "arrange", "last")
+importFrom("rlang", ".data")
 importFrom("seasonal", "seas", "final")
 importFrom("x13binary", "supportedPlatform")
 importFrom("grDevices", "dev.off", "pdf", "png")
