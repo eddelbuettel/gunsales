@@ -10,7 +10,7 @@ Obama and Calls for Restrictions](https://www.nytimes.com/interactive/2015/12/10
 
 ### Pre-requisites
 
-This package depends on the R package [seasonal](https://cran.r-project.org/package=seasonal/vignettes/seas.pdf) for the seasonal adjustments, which itself uses a program called [X-13ARIMA-SEATS](https://www.census.gov/srd/www/x13as/).
+This package depends on the R package [seasonal](https://cran.r-project.org/package=seasonal/vignettes/seas.pdf) for the seasonal adjustments, which itself uses a program called [X-13ARIMA-SEATS](https://www.census.gov/data/software/x13as.html).
 Windows, OS X and Linux binaries for this program are installed by the R package [x13binary](https://github.com/x13org/x13binary).
 
 Both packages are now on CRAN and can be installed along with the other dependencies via
@@ -38,7 +38,7 @@ visualized via
 ```
 
 to create, respectively, plots via R base or
-[ggplot2](https://github.com/hadley/ggplot2). Options to save the output in the `out/` folder exist. The resulting [ggplot2](https://github.com/hadley/ggplot2) charts are shown below:
+[ggplot2](https://github.com/tidyverse/ggplot2). Options to save the output in the `out/` folder exist. The resulting [ggplot2](https://github.com/tidyverse/ggplot2) charts are shown below:
 
 ![Total Estimated Gun Sales](https://raw.githubusercontent.com/NYTimes/gunsales/master/out/ggplot_total.png)
 
@@ -61,6 +61,6 @@ BuzzFeed also released the same dataset on [Github](https://github.com/BuzzFeedN
 
 #### Getting gun sales estimates from background checks
 
-To convert background checks into estimated sales, we relied on a method suggested in the [Small Arms Survey](https://www.smallarmssurvey.org/fileadmin/docs/F-Working-papers/SAS-WP14-US-Firearms-Industry.pdf) by Jurgen Brauer, a professor at Georgia Regents University. Each long gun and handgun check was counted as 1.1 sales. Each multiple-gun check was counted as two sales. Permit checks and other types of checks were omitted. The multiplier is an estimate based on Mr. Brauer's interviews with gun shop owners.
+To convert background checks into estimated sales, we relied on a method suggested in the [Small Arms Survey](https://web.archive.org/web/20160330180721/https://www.smallarmssurvey.org/fileadmin/docs/F-Working-papers/SAS-WP14-US-Firearms-Industry.pdf) by Jurgen Brauer, a professor at Georgia Regents University. Each long gun and handgun check was counted as 1.1 sales. Each multiple-gun check was counted as two sales. Permit checks and other types of checks were omitted. The multiplier is an estimate based on Mr. Brauer's interviews with gun shop owners.
 
 Note: In our computation, we excluded background checks for the "multiple" category in California because they followed an unusual pattern that did not match California gun sales data.

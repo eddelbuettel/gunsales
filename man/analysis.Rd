@@ -29,6 +29,6 @@ and maintains the package.
 }
 \seealso{
 The NY Times article presenting this analsysi undertaken by this package is
-at \url{http://www.nytimes.com/interactive/2015/12/10/us/gun-sales-terrorism-obama-restrictions.html?}
+at \url{https://www.nytimes.com/interactive/2015/12/10/us/gun-sales-terrorism-obama-restrictions.html}
 }
 
